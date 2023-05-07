@@ -1,6 +1,5 @@
 import { buildSvcEndpoint } from "$lib/env"
 import type { LiteArtifact } from "$lib/models"
-import { json } from "@sveltejs/kit"
 
 export interface PortfolioLoadData {
   projects: Promise<LiteArtifact[]>

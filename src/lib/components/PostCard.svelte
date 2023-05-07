@@ -13,7 +13,9 @@
               md:h-28" src={buildSvcEndpoint("/media/" + post.header_id)} alt="cat"/>
   <div class="w-full pt-1 pb-3 flex flex-col justify-between">
     <div class="w-full">
-      <h2 class="font-extrabold text-lg text-light line-clamp-1">{post.title}</h2>
+      <h2 class="font-extrabold text-lg text-light line-clamp-1">
+        {post.title.charAt(0).toUpperCase() + post.title.slice(1)}
+      </h2>
       <p class="text-sm text-light">7 hours ago</p>
     </div>
     <div class="w-full flex flex-row justify-between">
