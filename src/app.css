@@ -3,35 +3,3 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@keyframes fade-up {
-  0% {
-    opacity: 0%;
-    transform: translateY(20px);
-  }
-  100% {
-    opacity: 100%;
-    transform: translateY(0px);
-  }
-}
-
-.fade-up {
-  animation-name: fade-up;
-  animation-duration: 600ms;
-  animation-timing-function: ease-out;
-}
-
-@keyframes fade-in {
-  0% {
-    opacity: 0%;
-  }
-  100% {
-    opacity: 100%;
-  }
-}
-
-.fade-in {
-  animation-name: fade-in;
-  animation-duration: 600ms;
-  animation-timing-function: ease-out;
-}
