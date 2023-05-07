@@ -1,17 +1,6 @@
 <script lang="ts">
   import PostCard from '$lib/components/PostCard.svelte';
-  import type { LiteArtifact } from '$lib/models';
   import type { BlogLoadData } from './+page';
-
-  const posts: LiteArtifact[] = [
-    {
-      title: 'A vague introduction to Machine Learning',
-      external_link: '',
-      summary: '',
-      tags: ['Python', 'ML'],
-      header_id: '64571f1b98f72c57cee6413b'
-    }
-  ]
 
   export let data: BlogLoadData
 </script>

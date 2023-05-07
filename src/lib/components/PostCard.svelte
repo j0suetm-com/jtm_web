@@ -4,6 +4,8 @@
   import Tag from '$lib/components/Tag.svelte'
   import Cta from '$lib/components/CTA.svelte'
 
+  import { timerel } from 'timerel'
+
   export let post: LiteArtifact
 </script>
 
@@ -16,7 +18,9 @@
       <h2 class="font-extrabold text-lg text-light line-clamp-1">
         {post.title.charAt(0).toUpperCase() + post.title.slice(1)}
       </h2>
-      <p class="text-sm text-light">7 hours ago</p>
+      <p class="text-sm text-light">
+        {timerel(new Date(post.created_at))}
+      </p>
     </div>
     <div class="w-full flex flex-row justify-between">
       <ul class="h-min pt-1 flex flex-row space-x-2">

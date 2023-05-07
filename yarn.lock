@@ -233,6 +233,11 @@
   resolved "https://registry.yarnpkg.com/@types/marked/-/marked-4.3.0.tgz#5cd14a190b0a4d212781cfee7093f611ec74a111"
   integrity sha512-zK4gSFMjgslsv5Lyvr3O1yCjgmnE4pr8jbG8qVn4QglMwtpvPCf4YT2Wma7Nk95OxUUJI8Z+kzdXohbM7mVpGw==
 
+"@types/node@^20.1.0":
+  version "20.1.0"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-20.1.0.tgz#258805edc37c327cf706e64c6957f241ca4c4c20"
+  integrity sha512-O+z53uwx64xY7D6roOi4+jApDGFg0qn6WHcxe5QeqjMaTezBO/mxdfFXIVAVVyNWKx84OmPB3L8kbVYOTeN34A==
+
 "@types/pug@^2.0.6":
   version "2.0.6"
   resolved "https://registry.yarnpkg.com/@types/pug/-/pug-2.0.6.tgz#f830323c88172e66826d0bde413498b61054b5a6"
@@ -1059,6 +1064,11 @@ thenify-all@^1.0.0:
   integrity sha512-RVZSIV5IG10Hk3enotrhvz0T9em6cyHBLkH/YAZuKqd8hRkKhSfCGIcP2KUY0EPxndzANBmNllzWPwak+bheSw==
   dependencies:
     any-promise "^1.0.0"
+
+timerel@^5.4.1:
+  version "5.4.1"
+  resolved "https://registry.yarnpkg.com/timerel/-/timerel-5.4.1.tgz#3690e6d49be4fdf0506de9adec792fe4e4f08900"
+  integrity sha512-jXv69DZcuRBq8S1r0V0hU+Ka/HkqalWXmZpP8IHrWEXgmMTK2AysGv88KVcbNyjYIl8JQ+ZA1fVkLTG2Ys3I1Q==
 
 tiny-glob@^0.2.9:
   version "0.2.9"

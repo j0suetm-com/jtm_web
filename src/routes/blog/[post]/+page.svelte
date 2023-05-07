@@ -1,16 +1,16 @@
 <script lang="ts">
   import Reader from "$lib/components/Reader.svelte";
-  import type { ProjectLoadData } from "./+page";
+  import type { PostLoadData } from "./+page";
 
-  export let data: ProjectLoadData
+  export let data: PostLoadData
 </script>
 
 <main class="w-full mx-auto my-auto px-4 mt-4 flex flex-col space-y-4
              md:w-3/4
              lg:w-3/5">
-  {#await data.project}
+  {#await data.post}
     <p class="text-white">Loading...</p>
-  {:then project} 
-    <Reader artifact={project}/>
+  {:then post} 
+    <Reader artifact={post}/>
   {/await}
 </main>

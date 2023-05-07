@@ -7,7 +7,8 @@
     external_link: '',
     summary: '',
     tags: ['Python', 'ML'],
-    header_id: '64571f1b98f72c57cee6413b'
+    header_id: '64571f1b98f72c57cee6413b',
+    created_at: ''
   }
 </script>
 
