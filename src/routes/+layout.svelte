@@ -38,7 +38,7 @@
   <div class="fixed w-screen h-screen pb-4 overflow-y-auto"
       out:fade={{duration: 300}}>
     <header class="w-full pt-4 pb-2 flex flex-row justify-center space-x-1
-                font-semibold text-xl text-light">
+                   font-semibold text-xl text-light">
       {#each navLinks as link}
         <a class="{link.isH ? 'bg-light text-dark' : 'text-light hover:underline'}
                   group px-4 py-2 rounded-2xl font-extrabold" href={link.href}>
