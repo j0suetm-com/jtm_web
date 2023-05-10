@@ -1,15 +1,9 @@
 <script lang="ts">
   import PostCard from '$lib/components/PostCard.svelte'
   import type { LiteArtifact } from '$lib/models'
+  import type { HomeLoadData } from './+page.ts'
 
-  const recent_post: LiteArtifact = {
-    title: 'A vague introduction to Machine Learning',
-    external_link: '',
-    summary: '',
-    tags: ['Python', 'ML'],
-    header_id: '64571f1b98f72c57cee6413b',
-    created_at: ''
-  }
+  export let data: HomeLoadData
 </script>
 
 <main class="w-full mx-auto my-auto px-4 mt-20 fade-up
@@ -45,7 +39,11 @@
                md:w-2/3 md:pb-10 md:bottom-0 md:left-0 md:right-0
                lg:w-1/2">
   <p class="font-semibold text-md text-light">Recent blog post:</p>
-  <PostCard post={recent_post}/>
+  {#await data.recent_post}
+    <p class="text-light">Loading...</p>
+  {:then recent_post}
+    <PostCard post={recent_post}/>
+  {/await}
 </footer>
 
 <span class="fixed w-full bottom-2 text-xs text-center text-light">Copyright © Josué Teodoro Moreira</span>
