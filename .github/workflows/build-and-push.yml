@@ -24,7 +24,7 @@ jobs:
         run: echo "${{ secrets.JTM_WEB_CONFIG }}" > .env
         
       - name: Build container image
-        run: docker build -t $(echo $REGISTRY)/$(echo $IMAGE_NAME):$(echo $GITHUB_SHA | head -c7) -t j0suetm/($echo $IMAGE_NAME) .
+        run: docker build -t $(echo $REGISTRY)/$(echo $IMAGE_NAME):$(echo $GITHUB_SHA | head -c7) -t j0suetm/$(echo $IMAGE_NAME) .
         
       - name: Install doctl
         uses: digitalocean/action-doctl@v2
